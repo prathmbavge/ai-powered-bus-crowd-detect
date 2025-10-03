@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="description" content="AI-powered bus crowd detection system" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"
+    />
+    <!-- Inter font for modern UI -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "Roboto", "Arial", "sans-serif"],
+            },
+            colors: {
+              blue: {
+                50: "#e3f2fd",
+                100: "#bbdefb",
+                200: "#90caf9",
+                300: "#64b5f6",
+                400: "#42a5f5",
+                500: "#2196f3",
+                600: "#1e88e5",
+                700: "#1976d2",
+                800: "#1565c0",
+                900: "#0d47a1",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-balance {
+          text-wrap: balance;
+        }
+      }
+    </style>
+    <title>Bus Crowd Detection System</title>
+  </head>
+  <body class="bg-gray-50">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
